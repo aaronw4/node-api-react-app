@@ -1,4 +1,5 @@
 import React, {useEffect, useState} from 'react';
+import {Link} from 'react-router-dom';
 import axios from 'axios';
 
 function ProjectsDetails() {
@@ -23,14 +24,21 @@ function ProjectsDetails() {
     return (  
         <div>
             {console.log(project)}
-            <h1>{project.name}</h1>
-            <p className='description'>Description: {project.description}</p>
-            {actions.map(action => (
-                <div key={action.id} className='action'>
-                    <p>Action {action.id}: {action.description}</p>
-                    <p>{action.notes}</p>
-                </div>
-            ))}             
+            <div className='homeLink'>
+                <Link to='/'>
+                    Home
+                </Link>
+            </div>
+            <div>
+                <h1>{project.name}</h1>
+                <p className='description'>Description: {project.description}</p>
+                {actions.map(action => (
+                    <div key={action.id} className='action'>
+                        <p>Action {action.id}: {action.description}</p>
+                        <p>{action.notes}</p>
+                    </div>
+                ))}  
+            </div>           
         </div>
     
   );

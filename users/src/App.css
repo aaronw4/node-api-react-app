@@ -1,6 +1,7 @@
 .App {
   text-align: center;
 }
+
 .project, .action {
   border: 2px solid black;
   width: 80%;
@@ -10,4 +11,15 @@
 
 .description {
   font-weight: bold;
+}
+
+.homeLink {
+  text-align: left;
+  margin: 20px;
+}
+
+.homeLink a {
+  text-decoration: none;
+  font-size: 20px;
+  color: black;
 }
