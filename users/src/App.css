@@ -1,6 +1,13 @@
 .App {
   text-align: center;
 }
-.project{
-  border: 1px solid black;
+.project, .action {
+  border: 2px solid black;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.description {
+  font-weight: bold;
 }
