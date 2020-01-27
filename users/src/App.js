@@ -1,13 +1,16 @@
 import React from 'react';
+import {BrowserRouter, Route} from 'react-router-dom';
+import Projects from './components/projects'
 import './App.css';
 
-function App() {
-  
+function App() {  
 
-  return (
-    <div className="App">
-      
-    </div>
+  return (    
+    <BrowserRouter>
+      <div className='App'>
+        <Route exact path='/' component={Projects}/>
+      </div>
+    </BrowserRouter> 
   );
 }
 
